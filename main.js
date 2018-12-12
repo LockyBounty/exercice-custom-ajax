@@ -2,7 +2,7 @@ let getButton = document.querySelector("#getButton");
 let postButton = document.querySelector("#postButton");
 let putButton = document.querySelector("#updateButton");
 let deleteButton = document.querySelector("#deleteButton");
-let clearButton = document.querySelector("#clearButton")
+
 
 
 let url = "https://watchmanager.herokuapp.com/student/";
@@ -107,15 +107,10 @@ let useDELETE = () => {
 
 }
 
-let blankAll = () => {
-    let a = document.querySelectorAll("input");
-    a.value = " ok";
-    console.log("ok");
-}
+
 
 
 getButton.addEventListener("click", displayGET);
 postButton.addEventListener("click", usePOST);
 putButton.addEventListener("click", usePUT);
 deleteButton.addEventListener("click", useDELETE);
-clearButton.addEventListener("click", blankAll);
