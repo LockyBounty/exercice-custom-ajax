@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Arbeit!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    <div class=block1>
+           <button id="getButton">GET</button>
+           
+    </div>
+    
+    
+    <div class=block2>
+            
+            
+            <input id="idPOST" name="postBODY" type="text" value="" placeholder="Your nickname">
+            <button id="postButton">POST</button>
+            <div id=displayGet></div>
+    </div>
+    
+
+    <div class=block3>
+            <input id="idUPDATE0" name="postBODY0" type="text" value="" placeholder="Your ID">
+            <input id="idUPDATE1" name="postBODY1" type="text" value="" placeholder="Your nickname">
+            <input id="idUPDATE2" name="postBODY2" type="text" value="" placeholder="Your next watch theme">
+            <button id="updateButton">UPDATE</button>
+    </div>
+    
+    
+    
+    <div class=block4>
+            
+            <input id="idDELETE" name="postDELETE" type="text" onfocus="this.value=''" value="" placeholder="ID to delete">
+            <!--le onfocus="this.value=''" pour nettoyer la box lorsque l'on clique à l'interieur-->
+            <button id="deleteButton">DELETE</button>
+            <button id="clearButton">CLEAR ALL</button>
+        </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
