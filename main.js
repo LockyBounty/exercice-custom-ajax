@@ -11,8 +11,10 @@ let id = "";
 let displayGET = () => {
 
     fetch(url)
-        .then(response => response.json())
-        .then(res => console.log(res))
+        .then(response => response.json()) //prend les donnees et les fout dans un fichier json
+        .then(res => console.log(res) )  // console.log la liste des objets
+            /* function(res){for (i=0; i<res.length; i++){console.log( `${res[i].studentName}`)}} ) */
+            //fonction qui contient une boucle pour afficher la liste des noms 
         .catch((error) => console.warn(error))
 
 }
